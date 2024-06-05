@@ -75,7 +75,7 @@ class _MyWidgetState extends State<phone_numberview> {
              Navigator.push(
     context,
     MaterialPageRoute(builder: (context) => const otp_view()),
-  ); 
+  );
 
 
           },

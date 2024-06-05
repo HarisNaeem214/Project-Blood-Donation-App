@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_project_blood_dunation/Global_widgets.dart';
+import 'package:flutter_project_blood_dunation/Screens/Map.dart';
 
 class otp_view extends StatefulWidget {
   const otp_view({super.key});
@@ -114,7 +115,7 @@ class _MyWidgetState extends State<otp_view> {
           InkWell( onTap: (){
             Navigator.push(
     context,
-    MaterialPageRoute(builder: (context) => const otp_view()),
+    MaterialPageRoute(builder: (context) =>  map_view()),
   ); }
   ,
             child: Container(
@@ -123,6 +124,7 @@ class _MyWidgetState extends State<otp_view> {
               child: Center(child: Text("VERIFY",style: TextStyle(fontWeight: FontWeight.bold,color: whiteColor),)),
               height: 48,
               width: 56,
+              
               ),
           )),
 

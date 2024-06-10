@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_blood_dunation/Global_widgets.dart';
+import 'package:flutter_project_blood_dunation/Screens/Add_newDonor.dart';
 import 'package:flutter_project_blood_dunation/Screens/All_Donor.dart';
 import 'package:flutter_project_blood_dunation/Screens/Map_screen_w.dart';
 
@@ -76,8 +77,23 @@ class _MapState extends State<map_view> {
                   height: 50,
               width: 150,
               
-              child: Center(child: Text("ADD NEW DONOR",style: TextStyle(color: Colors.red,
-              fontWeight: FontWeight.bold),)),)
+              child: Center(child: GestureDetector(
+
+                  onTap: (){
+                      Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => const add_new_donor()),
+  );
+
+
+                  },
+
+                child: Text("ADD NEW DONOR",style: TextStyle(color: Colors.red,
+                fontWeight: FontWeight.bold),
+                ),
+              ),
+              
+              ),)
               ],),
               ],),
         ))    // this Container For Blood group Selection
